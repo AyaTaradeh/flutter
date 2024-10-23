@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(50.0), // ارتفاع شريط التطبيق
+        preferredSize: Size.fromHeight(50.0), 
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // بطاقة الملف الشخصي
+          
           Container(
             margin: EdgeInsets.all(16),
             padding: EdgeInsets.all(16),
@@ -73,7 +73,7 @@ class HomePage extends StatelessWidget {
                 CircleAvatar(
                   radius: 30,
                   backgroundImage: NetworkImage(
-                      'https://via.placeholder.com/150'), // استبدل بـ URL الصورة الفعلية
+                      'https://via.placeholder.com/150'), 
                 ),
                 SizedBox(width: 16),
                 Column(
@@ -107,7 +107,6 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-          // صف الأيقونات
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -118,7 +117,6 @@ class HomePage extends StatelessWidget {
             ],
           ),
           SizedBox(height: 16),
-          // قائمة الإعدادات مع تأثير الظل
           Expanded(
             child: ListView(
               children: [
